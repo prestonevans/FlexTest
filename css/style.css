@@ -129,3 +129,49 @@ input,
 select {
 	vertical-align: middle;
 }
+body {
+	background-color: cadetblue;
+	color: white;
+}
+header {
+	height: 5vh;
+	border-bottom: 1px solid white;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 3rem;
+	align-items: center;
+}
+a {
+	text-decoration: none;
+	color: white;
+}
+header nav a:not(:last-child) {
+	margin-right: 1rem;
+}
+main {
+	display: flex;
+}
+main nav {
+	min-width: 200px;
+	border-right: 1px solid white;
+	display: flex;
+	flex-flow: column;
+}
+main nav p {
+	padding: .5em 0;
+	text-align: center;
+}
+main nav p:nth-child(even) {
+	background-color: rgb(72, 121, 122);
+}
+section {
+	width: 100%;
+	margin: 2rem;
+	display: flex;
+	flex-flow: column;
+	align-items: space-between;
+}
+section h1 {
+	align-self: center;
+	margin-bottom: 2rem;
+}
